@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="frmGame">
+        <!--Nome do Jogo-->
+        <label for="txtGameName">Nome do Jogo</label>
+        <input type="text" id="txtGameName" required><br>
+
+        <!--Ano do Jogo-->
+        <label for="txtGameYear">Ano do Jogo</label>
+        <input type="number" id="txtGameYear" required><br>
+
+        <!--Genero do Jogo-->
+        <label for="txtGameGenre">Género do Jogo</label>
+        <select id="txtGameGenre">
+            <option value="acao">Ação</option>
+            <option value="aventura">Aventura</option>
+            <option value="desporto" selected>Desporto</option>
+            <option value="estategia">Estratégia</option>
+            <option value="simulacao">Simulação</option>
+        </select><br>
+
+        <!--Capa do Jogo-->
+        <label for="txtGameCover">Capa do Jogo</label>
+        <input type="url" id="txtGameCover" required><br>
+
+        <!--Botões-->
+        <input type="submit" value="ADICIONAR">
+        <input type="reset" value="REPOR">
+    </form>
+    <hr>
+    <table>
+        <th>Nome</th>
+        <th>Ano</th>
+        <th>Género</th>
+        <th>Capa</th>
+        <th>Opções</th>
+    </table>
+
+    <script src="ex5.js"></script>
+</body>
+</html>
