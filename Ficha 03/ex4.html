@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a1 -->
+    <!-- <input type="button" onclick="alert('Ola Mundo!')" value="Clica-me"> -->
+    <input type="button" id="myButton" value="Clica-me">
+    <input type="text" name="" id="myTextBox">
+    <p id="myP"></p>
+
+    <script>
+        //d
+        window.addEventListener("load", function(){
+            //a2
+            /* document.querySelector("input").onclick = function(){
+                alert('Olá Mundo!')
+            } */
+
+            //a3
+            const myButton = document.querySelector("#myButton");
+            myButton.addEventListener("click", function(){
+                //alert('Olá Mundo!')
+                alert(myTextBox.value.length)
+            })
+
+            //b
+            const myTextBox = document.querySelector("#myTextBox");
+            const myP = document.querySelector("#myP");
+            myTextBox.addEventListener("input", function(){
+                myP.innerHTML = myTextBox.value;
+            })
+
+            //c
+            myButton.addEventListener("mouseup", function(){
+                alert("Obrigado pelo clique no botão");
+            })
+        })
+    </script>
+</body>
+</html>
